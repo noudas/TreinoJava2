@@ -1,1 +1,74 @@
+A – Criando uma classe Funcionario
+1. Crie um pacote chamado aula7lab1;
+2. Dentro do pacote, crie uma classe chamada Funcionario;
+3. Defina os atributos nome, sobrenome, cargo e salario na classe;
+4. Salve a classe.
 
+
+B – Criando uma classe para testar a classe Funcionario
+1. No pacote aula7lab1 crie uma classe chamada Aula7_Lab1 e insira a estrutura básica de um programa Java;
+2. Declare um objeto do tipo Funcionario e o instancie;
+3. Determine valores para os atributos nome, sobrenome, cargo e salario do objeto criado;
+4. Imprima os atributos do objeto na tela;
+5. Compile e execute o programa.
+
+
+
+
+C - Criando uma classe Carro
+1. Crie uma classe chamada Carro dentro de um pacote denominado carro;
+2. Defina como atributos dessa classe modelo, potência do motor e cor;
+3. Salve a classe.
+
+
+C.2 – Criando uma classe Garagem que contém carros como atributos
+1. No mesmo pacote da classe Carro, crie uma classe denominada Garagem;
+2. Crie dois atributos do tipo Carro nessa classe e nomeie-os carro
+Passeio e carroUtilitario;
+3. Crie a mesma estrutura básica de um programa Java nessa classe (método main(String [] args)) e, dentro desse método, instancie um objeto do próprio tipo Garagem com o nome “g”;
+4.  Dentro  do  método  main,  e  utilizando  o  objeto  g,  do  tipo  Garagem,  configure  valores  adequados à sua escolha para os atributos de cada um dos objetos do tipo Carro criados na classe Garagem;
+5. Imprima na tela os atributos de cada um dos carros criados;
+6. Compile e execute o programa.
+
+
+
+D -  Implementando a classe Calculadora
+A  partir  da  classe  Calculadora,  usada  como  exemplo  na  leitura  6,  vamos  implementar  os  métodos subtrair, multiplicar e dividir.
+1. Abra a classe Calculadora;
+2. Crie um método público que retorne o tipo int, com o nome subtrair e que receba dois parâmetros do tipo int;
+3. Dentro do método, retorne a diferença entre o primeiro parâmetro e o segundo parâmetro;
+4. Crie os métodos públicos multiplicar e dividir retornando, respectivamente, a multiplicação e divisão dos parâmetros;
+5. Salve e compile o programa.
+
+D.2 – Testando a classe Calculadora1. 
+Crie uma classe chamada Aula7_Lab3 e insira a estrutura básica de um programa Java;
+2. Instancie um objeto da classe Calculadora;
+3. Use os métodos somar, subtrair, multiplicar e dividir. Imprima os resultados na tela;
+4. Compile e execute o programa.
+
+
+E -  – Criando métodos sobrecarregados na classe Calculadora
+1. Utilizando a classe Calculadora do laboratório anterior, crie três sobrecargas do método subtrair, uma recebendo como parâmetros dois tipos double, outra recebendo um int e um double e uma terceira recebendo um double e um int. Não se esqueça de seguir essa ordem;
+2. Salve e compile a classe.
+
+E.2 – Testando a nova versão da classe Calculadora
+1. Crie uma classe chamada Aula7_Lab4 e, nesta classe, crie o método main;
+2. Dentro  dessa  classe,  crie  uma  instância  de  Calculadora  e  faça  chamadas  às  versões  sobrecarregadas do método subtrair, criadas neste laboratório;
+3. Execute o programa.
+
+F - Criando a classe Aluno
+1. Crie uma classe denominada Aluno;
+2. Nessa classe, crie um campo de acesso private da string chamada nome;
+3. Crie os métodos getter e setter para acesso ao campo nome;
+4. Crie um novo campo público, estático, do tipo int e de nome contadorDeAlunos;
+5. Salve e compile sua classe.
+
+F.2 -  Criando uma classe para testar a classe Aluno
+1.  Crie  uma  classe  chamada  Aula7_Lab5  e  garanta  que  o  método  main  seja  criado  nessa  classe;
+2. Instancie três objetos Aluno com os nomes: “joao”, “maria” e “marcos”;As ações descritas nos passos 3 a 6 devem ser repetidas, sequencialmente, para cada objeto instanciado.
+3. Modifique o valor do atributo nome da classe para ficar igual ao do objeto (“João”, “Maria” ou “Marcos”), utilizando o método setter apropriado;
+4. Incremente a variável contadorDeAlunos, usando como referência o identificador do objeto criado;
+5. Invoque o método imprimeAluno() do respectivo objeto;
+6. Imprima na tela o valor atual da variável estática contadorDeAlunos a partir do objeto atual;
+7. Imprima na tela o valor da variável estática contadorDeAlunos, acessando-a por meio do nome da classe, da seguinte forma: Aluno.contadorDeAlunos;
+8. Execute o programa.
