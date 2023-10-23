@@ -1,0 +1,138 @@
+Laboratório 2
+
+A – Verificando se um número é primoVamos criar um programa que verifica se um número é primo. Lembre-se de que um número primo só é divisível por 1 e por ele mesmo.
+1. Crie uma classe e insira a estrutura básica de um programa Java;
+2. Declare duas variáveis do tipo int com os nomes numero e divisoes e atribua um valor para numero e 0 para divisoes;
+3.  Crie  um  laço  de  repetição  for  com  uma  variável  declarada  e  iniciada  em  1  e  que  rode  enquanto ela for menor que a variável numero, incrementando a variável a cada iteração;
+4. Dentro do for, verifique se o módulo entre a variável i e a variável numero é igual a 0. Caso seja verdadeiro, incremente a variável divisoes;
+5. Logo após a estrutura de repetição for, verifique se a variável divisoes é menor ou igual a 2. Caso seja verdadeiro, imprima que o número é primo; caso contrário, imprima que não é primo;
+6. Compile e execute o programa:
+
+
+
+class Lab_exercicio_2A {
+  public static void main(String[] args) {
+
+    int numeros = 13;
+    int divisoes = 0;
+    
+    for (int i = 1; i < numeros; i++){
+        if (numeros % i == 0){
+            divisoes++;
+        }
+        
+    }
+        
+    if (divisoes <= 2){
+        System.out.print("Numero Primo");
+    }
+    else
+    {
+        System.out.print("Numero nao e Primo");
+    }
+    }
+  }
+
+
+
+B – Verificando quantos dias tem cada mês
+Vamos criar um programa que imprime na tela a quantidade de dias existentes no mês, dada uma variável que contenha o nome do mês em questão.
+
+1. Crie uma classe e insira a estrutura básica de um programa Java;
+2. Declare uma variável do tipo String e armazene o nome de um mês de sua preferência, conforme o exemplo a seguir:
+3. Utilize uma estrutura de decisão múltipla switch, tendo a variável mes como referência, e  imprima,  para  o  mês  escolhido  a  frase:  “O  mês  escolhido  tem  XX  dias”.  Utilize  strings  iniciadas com maiúsculo ou minúsculo.
+ Padronize para evitar problemas;
+
+4.  Acrescente  um  item  default  à  estrutura  switch  com  uma  mensagem  de  erro  que  será  impressa no console, caso algum mês inexistente seja atribuído à variável mes;
+5. Altere os nomes atribuídos à variável mes, compile e execute seu programa algumas vezes:
+
+
+
+class Lab_exercicio_2B {
+  public static void main(String[] args) {
+
+    String mes = "Fevereiro";
+    
+    switch(mes){
+        case "Janeiro":
+            System.out.println("Esse mes tem 31 dias");
+            break;
+            
+        case "Fevereiro":
+            System.out.println("Esse mes tem 28 ou 29 dias");
+            break;
+        
+        case "Marco":
+            System.out.println("Esse mes tem 31 dias");
+            break;
+        
+        case "Abril":
+            System.out.println("Esse mes tem 30 dias");
+            break;
+        
+        case "Maio":
+            System.out.println("Esse mes tem 31 dias");
+            break;
+        
+        case "Junho":
+            System.out.println("Esse mes tem 30 dias");
+            break;
+            
+        case "Julho":
+            System.out.println("Esse mes tem 31 dias");
+            break;
+        
+        case "Agosto":
+            System.out.println("Esse mes tem 30 dias");
+            break;
+            
+        case "Setembro":
+            System.out.println("Esse mes tem 31 dias");
+            break;
+        
+        case "Outubro":
+            System.out.println("Esse mes tem 30 dias");
+            break;
+
+        case "Novembro":
+            System.out.println("Esse mes tem 31 dias");
+            break;
+        
+        case "Dezembro":
+            System.out.println("Esse mes tem 30 dias");
+            break;
+            
+        default:
+            System.out.println("Esse mes nao existe");
+        
+    }
+    }
+  }
+
+
+
+
+C - Exibindo os anos das Copas do MundoVamos criar um programa que imprime na tela todos os anos em que houve Copa do Mundo de Futebol.
+1. Crie uma classe e insira a estrutura básica de um programa Java;
+2. Utilize a estrutura for, declarando a variável inteira ano e inicializando com o valor 1930(ano da primeira Copa do Mundo). 
+Essa variável deverá ser incrementada de 4 em 4 (período entre as copas) até atingir o ano atual;
+
+3. Dentro do loop realizado no passo anterior, crie uma estrutura condicional if utilizada para desconsiderar  as  iterações  quando  ano  for  igual  a  1942  ou  1946  (anos  em  que  não  houve  copa do mundo devido à Segunda Guerra). 
+Em outras palavras, se o ano for 1942 ou 1946, interrompa a iteração e vá para a próxima (use a instrução continue);
+
+4. Imprima cada um dos anos de Copa do Mundo.O resultado deverá ser semelhante a este:
+
+
+
+class Lab_exercicio_2C {
+    public static void main(String[] args) {
+    
+          for (int ano = 1930; ano < 2023; ano = ano + 4){
+                  if( ano == 1942 || ano == 1946){
+                      continue;
+                  }
+              System.out.println("Copa do Mundo" + ano + "!");
+          }
+    
+      }
+}
